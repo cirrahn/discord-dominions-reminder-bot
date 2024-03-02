@@ -1,0 +1,33 @@
+[
+	{
+		"statusPage": "http://192.168.0.28:8000",
+		"players": [
+			{
+				"nation": "Sauromatia, Amazon Queens",
+				"discordId": "123456789123456789"
+			},
+			{
+				"nation": "Ermor, New Faith",
+				"discordId": "123456789123456789"
+			}
+		]
+	},
+	{
+		"isDisabled": true,
+		"statusPage": "http://192.168.0.28:8001",
+		"players": [
+			{
+				"nation": "Arcoscephale, Golden Era",
+				"discordId": "123456789123456789"
+			},
+			{
+				"nation": "Mekone, Brazen Giants",
+				"discordId": "123456789123456789"
+			},
+			{
+				"nation": "Abysia, Children of Flame",
+				"discordId": "123456789123456789"
+			}
+		]
+	}
+]

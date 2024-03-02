@@ -1,0 +1,40 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "games",
+
+	"$defs": {
+		"player": {
+			"type": "object",
+			"properties": {
+				"nation": {"type": "string"},
+				"discordId": {"type": "string"}
+			},
+			"required": ["nation", "discordId"],
+			"additionalProperties": false
+		},
+
+		"game": {
+			"type": "object",
+			"properties": {
+				"isDisabled": {"type": "boolean"},
+				"statusPage": {"type": "string"},
+				"players": {
+					"type": "array",
+					"uniqueItems": true,
+					"minItems": 1,
+					"items": {"$ref": "#/$defs/player"}
+				}
+			},
+			"required": [
+				"statusPage",
+				"players"
+			],
+			"additionalProperties": false
+		}
+	},
+
+	"type": "array",
+	"uniqueItems": true,
+	"minItems": 1,
+	"items": {"$ref": "#/$defs/game"}
+}
